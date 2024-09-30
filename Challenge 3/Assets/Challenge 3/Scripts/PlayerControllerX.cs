@@ -17,6 +17,8 @@ public class PlayerControllerX : MonoBehaviour
     public AudioClip moneySound;
     public AudioClip explodeSound;
 
+    public ScoreManager sM;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +38,7 @@ public class PlayerControllerX : MonoBehaviour
     {
         if (!isLowEnough())
         {
-            playerRb.velocity = Vector3.zero;
+            playerRb.velocity = Vector3.down;
         }
         // While space is pressed and player is low enough, float up
         if (Input.GetKey(KeyCode.Space) && isLowEnough() && !gameOver)
@@ -49,7 +51,7 @@ public class PlayerControllerX : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ground"))
         {
-            playerRb.AddForce(new Vector3(0,10,0), ForceMode.Impulse);
+            playerRb.AddForce(new Vector3(0,13,0), ForceMode.Impulse);
         }
     
         // if player collides with bomb, explode and set gameOver to true
@@ -68,7 +70,7 @@ public class PlayerControllerX : MonoBehaviour
             fireworksParticle.Play();
             playerAudio.PlayOneShot(moneySound, 1.0f);
             Destroy(other.gameObject);
-
+            sM.addScore();
         }
     }
 
