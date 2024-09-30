@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Kayden Miller
+* Assignment 4
+* Spawns a given prefab at a set interval on the right side of the screen off camera w/ an intial delay
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

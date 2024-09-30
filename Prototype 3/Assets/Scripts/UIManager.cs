@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Kayden Miller
+* Assignment 4
+* Manages displaying the user score and reloading the scene on a gameover
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

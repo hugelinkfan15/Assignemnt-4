@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Kayden Miller
+* Assignment 4
+* Increments the score whenever a player collides with attached object
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

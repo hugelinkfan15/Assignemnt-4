@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Kayden Miller
+* Assignment 4
+* Move the object this is attached with to the left at a set speed
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

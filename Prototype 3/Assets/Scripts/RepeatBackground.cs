@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* Kayden Miller
+* Assignment 4
+* Loops the background
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
